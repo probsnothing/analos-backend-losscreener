@@ -40,18 +40,18 @@ npm run dev
 
 All variables shown in `.env.example` are required unless marked optional.
 
-| Variable                      | Description                                                                                                          |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| `RPC_URL`                     | HTTPS Solana RPC endpoint used for historical lookups. Defaults to `https://api.mainnet-beta.solana.com` when unset. |
-| `WS_URL`                      | WebSocket Solana endpoint for real-time logs. Defaults to `wss://api.mainnet-beta.solana.com` when unset.            |
-| `PROGRAM_TOKEN_2022`          | Token-2022 program public key to monitor for new mints.                                                              |
-| `ASSOCIATED_TOKEN_PROGRAM_ID` | Associated token program ID used while parsing accounts.                                                             |
-| `PROGRAM_BONDING_CURVE`       | Bonding curve program public key whose transactions should be ingested.                                              |
-| `PROGRAM_DAMM`                | DAMM program public key whose transactions should be ingested.                                                       |
-| `LOS_MINT`                    | Mint address for the LOS token; used when deriving prices and trade sides.                                           |
-| `DEBUG_VERBOSE`               | Set to `1` to enable extra logging during event processing. Optional.                                                |
-| `SUPABASE_URL`                | Supabase project REST URL.                                                                                           |
-| `SUPABASE_ANON_KEY`           | Supabase service role key (store securely, do not ship to clients).                                                  |
+| Variable                      | Description                                                                                            |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------ |
+| `RPC_URL`                     | HTTPS Solana RPC endpoint used for historical lookups. Defaults to `https://rpc.analos.io` when unset. |
+| `WS_URL`                      | WebSocket Solana endpoint for real-time logs. Defaults to `wss://ws.analos.io` when unset.             |
+| `PROGRAM_TOKEN_2022`          | Token-2022 program public key to monitor for new mints.                                                |
+| `ASSOCIATED_TOKEN_PROGRAM_ID` | Associated token program ID used while parsing accounts.                                               |
+| `PROGRAM_BONDING_CURVE`       | Bonding curve program public key whose transactions should be ingested.                                |
+| `PROGRAM_DAMM`                | DAMM program public key whose transactions should be ingested.                                         |
+| `LOS_MINT`                    | Mint address for the LOS token; used when deriving prices and trade sides.                             |
+| `DEBUG_VERBOSE`               | Set to `1` to enable extra logging during event processing. Optional.                                  |
+| `SUPABASE_URL`                | Supabase project REST URL.                                                                             |
+| `SUPABASE_ANON_KEY`           | Supabase service role key (store securely, do not ship to clients).                                    |
 
 > ⚠️ Never commit real Supabase keys. Keep `.env` files out of version control.
 
